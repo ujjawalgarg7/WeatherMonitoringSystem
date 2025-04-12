@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="8sp">
+    <ImageView
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:src="@drawable/temp" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature :"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:paddingLeft="8sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="8sp">
+
+    <ImageView
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:src="@drawable/humidity"/>
+
+        <TextView
+        android:id="@+id/humid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity :"
+        android:textSize="24sp"
+        android:textStyle="bold"
+            android:paddingLeft="8sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Refresh"
+        android:textSize="20sp"
+        android:backgroundTint="@color/light_blue"/>
+
+</LinearLayout>
